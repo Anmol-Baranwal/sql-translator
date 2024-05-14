@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Github from "../GitHub";
-import ThemeButton from "../ThemeButton";
 import { useTheme } from "next-themes";
 
 export const Header = () => {
@@ -20,10 +19,9 @@ export const Header = () => {
         </p>
       </Link>
       <div className="flex items-center gap-3 pt-4">
-        
-        <a
+        <Link
           className="rounded-full text-gray-500 dark:text-gray-400"
-          href="https://github.com/whoiskatrin/sql-translator"
+          href="https://github.com/Anmol-Baranwal/sql-translator"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -33,10 +31,10 @@ export const Header = () => {
             <Github />
             <p>Star on GitHub</p>
           </div>
-        </a>
-        <a
+        </Link>
+        <Link
           className={`flex items-center justify-center space-x-2 py-2 px-6 rounded-full ${btnBgColor} text-black text-sm font-medium transition`}
-          href="https://twitter.com/whoiskatrin"
+          href="https://twitter.com/Anmol_Codes"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -54,9 +52,8 @@ export const Header = () => {
               />
             </svg>
           </div>
-        </a>
+        </Link>
       </div>
     </header>
   );
 };
-
